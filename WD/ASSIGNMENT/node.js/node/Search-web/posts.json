@@ -1,0 +1,12 @@
+[
+  { "userId": 1, "id": 1, "title": "Welcome to the dummy API", "body": "This is a sample post stored in a local JSON file." },
+  { "userId": 1, "id": 2, "title": "Learning Node Servers", "body": "Use the local /api/posts route to serve static JSON data dynamically." },
+  { "userId": 2, "id": 3, "title": "Search by User ID", "body": "Type a user ID and press search to filter posts from this JSON dataset." },
+  { "userId": 2, "id": 4, "title": "Simple Demo Data", "body": "Each post object includes userId, id, title, and body fields." },
+  { "userId": 3, "id": 5, "title": "Local JSON API", "body": "This dummy API returns data from a local JSON file without external requests." },
+  { "userId": 3, "id": 6, "title": "Dynamic Search Page", "body": "The page updates automatically when the search button is clicked." },
+  { "userId": 4, "id": 7, "title": "Node + Fetch Demo", "body": "Use a Node server to deliver both HTML and API responses." },
+  { "userId": 4, "id": 8, "title": "No JSONPlaceholder Needed", "body": "This app now uses dummy JSON data locally in the Search-web folder." },
+  { "userId": 5, "id": 9, "title": "Offline-Friendly Example", "body": "Local data makes the demo easier to run without relying on an online API." },
+  { "userId": 5, "id": 10, "title": "Ready for Testing", "body": "Search user IDs 1 through 5 to see filtered dummy posts." }
+]

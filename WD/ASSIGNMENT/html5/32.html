@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints Form</title>
+</head>
+<body align="center">
+
+    <h1>Complaints</h1>
+    <p>Help us improve our service.</p>
+    
+    <form action="/submit-complaint" method="POST">
+        <table align="center" cellspacing="9" cellpadding="6">
+            <tr>
+                <td align="left"><label for="fname">Full Name *</label></td>
+                <td align="left">
+                    <input type="text" id="fname" name="first_name" placeholder="First" required>
+                    <input type="text" id="lname" name="last_name" placeholder="Last" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="email">Email *</label></td>
+                <td align="left"><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td align="left"><label for="phone">Phone</label></td>
+                <td align="left"><input type="tel" id="phone" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td align="left"><label for="message">Where did we go wrong? *</label></td>
+                <td align="left"><textarea id="message" name="complaint_message" rows="5" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

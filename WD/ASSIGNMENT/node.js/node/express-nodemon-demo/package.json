@@ -1,0 +1,16 @@
+{
+  "name": "express-nodemon-demo",
+  "version": "1.0.0",
+  "description": "Demo project using Express and Nodemon",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

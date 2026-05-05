@@ -1,0 +1,38 @@
+Ques. : Difference between Structure & Union.
+Ans. :
+
+Structure:-
+
+-To define a structure, we utilize the struct statement.
+-Every member has their own memory place.
+-A change in the value of one data member has no effect on the structure’s other data members.
+-Multiple members can be initialised at the same time
+-Multiple values of various members can be stored in a structure
+-The overall size of a structure is the sum of the sizes of all data members
+-At any moment, users can access or recover any member
+SYNTAX : struct Structure_name
+	 {
+		member definition;
+		member definition;
+		...
+		member definition;
+	 }structure variable declaration
+
+
+
+Union:-
+
+-To define a union, we use the union keyword.
+-A memory location is shared by all data members.
+-A change in one data member’s value has an impact on the value of other data members.
+-Only the first member can be initialized at a time.
+-For all of its members, a union stores one value at a time.
+-The biggest data member determines the total size of a union.
+-Only one member can be accessed or retrieved at a time.
+SYNTAX : union Union_name
+	 {
+		member definition;
+		member definition;
+		...
+		member definition;
+	 }union variable declaration

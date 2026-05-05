@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+      .main {
+        width: 35%;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: auto;
+        padding: 50px;
+      }
+      h1 {
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+        border-radius: 100%;
+        letter-spacing: 4px;
+      }
+      #name {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #email {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #phone {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .radio {
+        margin-left: 25px;
+      }
+      #suggesion {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #submit {
+        padding: 15px 242px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="main">
+        <h1 align="center">Feedback Form</h1>
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          size="70"
+          id="name"
+          placeholder="Enter Name "
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          size="70"
+          id="email"
+          placeholder="Enter Email Address"
+          required
+        /><br /><br />
+
+        <label for="Phone">Phone Number</label>
+        <input
+          type="tel"
+          name="Phone"
+          id="phone"
+          size="70"
+          required
+        /><br /><br />
+
+        <label for="radio">Do you satisfy with our services?</label><br /><br />
+        <input type="radio" name="radio" class="radio" />Yes
+        <input type="radio" name="radio" class="radio" />No <br /><br />
+
+        <label for="Reason">Write Your Suggesions : </label>
+        <textarea
+          name="Reason"
+          id="suggesion"
+          rows="8"
+          cols="65"
+          required
+        ></textarea>
+
+        <br /><br /><input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit"
+        />
+      </div>
+    </form>
+  </body>
+</html>

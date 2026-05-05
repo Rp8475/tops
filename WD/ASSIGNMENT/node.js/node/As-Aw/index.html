@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Async/Await - Fetch User Data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Async/Await Demo</h1>
+    <p class="subtitle">Fetch user data from JSONPlaceholder using async/await</p>
+
+    <section class="controls">
+      <button id="fetchUsersBtn" class="fetch-btn">Fetch Users</button>
+      
+      <div class="single-user-controls">
+        <input 
+          id="userIdInput" 
+          type="number" 
+          placeholder="User ID (1-10)" 
+          min="1" 
+          max="10" 
+          value="1"
+          class="user-id-input"
+        />
+        <button id="fetchSingleUserBtn" class="fetch-btn secondary">Fetch User</button>
+      </div>
+      
+      <button id="clearBtn" class="clear-btn">Clear Results</button>
+    </section>
+
+    <section id="response" class="response">
+      <p class="hint">Click "Fetch Users" to get all users, or enter a User ID (1-10) and click "Fetch User" to get a specific user using async/await.</p>
+    </section>
+
+    <section id="consoleOutput" class="console-output">
+      <h3>Console Output</h3>
+      <div id="consoleLogs" class="console-logs">
+        <p class="console-hint">Console logs will appear here...</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

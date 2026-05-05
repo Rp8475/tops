@@ -1,0 +1,36 @@
+h1,h2,h3{
+	color:red;
+	background-color:yellow;
+  }
+  
+.mytest{
+	color:orange;
+	background-color:blue;
+}  
+
+.textcenter{
+	text-align:center;
+}
+.underline{
+	text-decoration:underline;
+}
+
+#mydemo{
+	color:blue;
+	background-color:orange;
+}
+
+h4.test{
+	text-transform:uppercase;
+}
+
+
+.mydiv{
+	width:50%;
+	height:200px;
+	background-color:red;
+}
+
+.mydiv p{
+	color:green;
+}

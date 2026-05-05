@@ -1,0 +1,162 @@
+@media only screen and (max-width: 700px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/* NAVBAR START */
+@media only screen and (max-width: 700px) {
+  .navlogo {
+    position: static;
+    top: 0;
+  }
+  .navlogo img {
+    /* width: 100%; */
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navanc a {
+    width: 100%;
+    text-align: center;
+    /* height: 100px; */
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbtn {
+    text-align: center;
+  }
+}
+/* NAVBAR END */
+
+/* BANNER START */
+@media only screen and (max-width: 700px) {
+  .banner {
+    background-image: url(../img/login-banner.png);
+    text-align: center;
+    /* display: flex; */
+  }
+  .banner h1,
+  h3 {
+    text-align: center;
+  }
+  .bannerbox h4 {
+    width: 100%;
+    text-align: justify;
+    line-height: 2;
+    font-size: 17px;
+    text-align: center;
+    line-height: normal;
+    word-wrap: break-word;
+  }
+  .bannerbtn {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 10px;
+  }
+}
+/* BANNER END */
+
+/* SECTION 1 START */
+@media only screen and (max-width: 700px) {
+  .h3 h3 {
+    text-align: center;
+    margin-left: 0%;
+  }
+}
+/* SECTION 1 START */
+
+/* CARD 1 START */
+@media only screen and (max-width: 700px) {
+  .card1 {
+    margin-left: 25%;
+  }
+  .card1 .card-1 {
+    display: none;
+  }
+}
+/* CARD 1 END */
+
+/* SignUp Page Start */
+@media only screen and (max-width: 700px) {
+  .left {
+    display: none;
+  }
+  .signup .right {
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+}
+/* SignUp Page End */
+
+/* Login Page Start */
+@media only screen and (max-width: 700px) {
+  .left {
+    display: none;
+  }
+  .login .right {
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+}
+/* SignUp Page End */
+
+/* Contact Page Start */
+@media only screen and (max-width: 700px) {
+  .left {
+    display: none;
+  }
+  .contact .right {
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+}
+/* Contact Page End */
+
+/* Find Doctor Page Start */
+@media only screen and (max-width: 700px) {
+  .fd-main {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+}
+/* Find Doctor Page End */

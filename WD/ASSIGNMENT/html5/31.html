@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to top right,
+                #eef5ff,
+                #b4d4ff,
+                #aa86f6,
+                #176b87);
+    }
+</style>
+
+<body>
+
+    <h2 align="center">Student Registration Form Using Table in HTML</h2>
+
+    <form method="post">
+        <table border="0" align="center" cellspacing="9">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="first_name">(Max 50 Characters Allowed)</td>
+
+
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="last_name" placeholder="enter your last name">(Max 50 Characters Allowed)
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email" placeholder="enter your city">(Max 50 Characters Allowed)</td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobile" maxlength="10" placeholder="enter your number">(Max 10 number
+                    Allowed)</td>
+
+
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Date of Birth (DOB)</td>
+                <td>
+                    <input type="date">
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td colspan="2"><textarea name="address" rows="4">(Max 500 Characters Allowed)</textarea></td>
+
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city" maxlength="50">(Max 50 Characters Allowed)</td>
+
+
+            </tr>
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text" name="pincode" maxlength="6">(Max 6 Characters Allowed)</td>
+
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state" maxlength="50"></td>
+
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td> <select name="" id="">
+                        <option disabled>---select your Counrty</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">vadodara</option>
+                        <option value="">mahesana</option>
+                        <option value="">gandhinagar</option>
+                    </select></td>
+
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="Drawing"> Drawing
+                    <input type="checkbox" name="hobby" value="Singing"> Singing
+                    <input type="checkbox" name="hobby" value="Dancing"> Dancing
+                    <input type="checkbox" name="hobby" value="Sketching"> Sketching<br>
+                    <input type="checkbox" name="hobby" value="Others"> Others
+                    <input type="text" name="other_hobby" maxlength="50" placeholder="Ex- Teaching">
+                    (Max 50 Characters Allowed)
+
+
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <input type="checkbox" name="qualification" value="High School"> High School(10th)<br>
+                    <input type="checkbox" name="qualification" value="Higher School"> Higher School(12th)<br>
+                    <input type="checkbox" name="qualification" value="Graduation"> Graduation(Bachelors)<br>
+                    <input type="checkbox" name="qualification" value="Post Graduation"> Post Graduation(Masters)<br>
+                    <input type="checkbox" name="qualification" value="Phd"> Phd
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Courses Applied For</td>
+                <td>
+                    <input type="radio" name="course" value="BCA"> BCA<br>
+                    <input type="radio" name="course" value="BCom"> B.Com<br>
+                    <input type="radio" name="course" value="BSc"> B.Sc<br>
+                    <input type="radio" name="course" value="BA"> BA<br>
+                    <input type="radio" name="course" value="MCA"> MCA<br>
+                    <input type="radio" name="course" value="MCom"> M.Com<br>
+                    <input type="radio" name="course" value="MSc"> M.Sc<br>
+                    <input type="radio" name="course" value="MA"> MA
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

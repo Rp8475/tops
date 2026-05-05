@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine:wght@400;700&display=swap");
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+}
+#mymenu {
+  background-color: rgba(255, 255, 255, 0.403);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+.btn-attendence {
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.348);
+}
+.btn-attendence:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  transition: 0.3s;
+  box-shadow: 5px 5px 5px black;
+}
+#mymenu li a {
+  color: rgba(0, 0, 0, 0.596);
+}
+#mymenu li a:active {
+  color: red;
+  font-weight: 600;
+  text-decoration: none;
+}
+#mymenu li a:hover {
+  transform: scale(1.15);
+  color: red;
+  transition: 0.3s;
+}
+
+.carousel-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -800%);
+  color: white;
+  text-align: center;
+}

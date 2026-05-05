@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "1_LENGTH_WITHOUT_IN-BUILT_FUNCTION.C": "cpp",
+    "2_SEPARATE_INDIVIDUAL_CHARACTER.C": "cpp",
+    "3_SEPARATE_IN_REVERSE.C": "cpp",
+    "4_COUNT_TOTAL_OF_WORD_IN_STRING.C": "cpp",
+    "5_COMPARE_STRING_WITHOUT_LIBRARY_FUNCTION.C": "cpp",
+    "6_COUNT_FROM_STRING.C": "cpp",
+    "7_COPY_STRING.C": "cpp",
+    "8_COUNT_VOWEL_CONSONANT.C": "cpp",
+    "9_MAX_CHAR_IN_STRING.C": "cpp",
+    "10_EXTRACT_SUBSTRING_FROM_GIVEN_STRING.C": "cpp",
+    "11_UPPER_LOWER_CASE.C": "cpp",
+    "12_FIND_COUNT_OF_IS.C": "cpp",
+    "13_REMOVE_ALL_EXCEPT_ALPHABETS.C": "cpp",
+    "14_COMBINE_TWO_STRING.C": "cpp",
+    "15_LARGE_SMALL_WORD_IN_STRING.C": "cpp"
+  }
+}

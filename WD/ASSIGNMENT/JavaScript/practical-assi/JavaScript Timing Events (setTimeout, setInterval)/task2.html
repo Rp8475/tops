@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="clock"></h1>
+    <script>
+        function digiClock()
+        {
+            const now=new Date();
+            let hours=now.getHours().toString();
+            let minute=now.getMinutes().toString();
+            let second=now.getSeconds().toString();
+            document.getElementById("clock").textContent=hours+":"+minute+":"+second;
+        }
+        //update every seconds
+        setInterval(digiClock,1000);
+        digiClock();
+    </script>
+</body>
+</html>

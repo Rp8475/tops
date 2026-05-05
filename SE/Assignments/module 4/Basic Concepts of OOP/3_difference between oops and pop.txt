@@ -1,0 +1,19 @@
+difference between oops and pop
+
+OPPS:-
+
+->      Objects as foundational elements The foundational elements of OOP are objects. Objects live within a class and help to define the 	information collected, stored, and used within the class. In OOP, programs are broken down into objects.
+
+->      Use of classes A class is simply the umbrella over objects that tells the object what information to collect, store, and use. Classes are    	also used for “message passing” to communicate between classes in the program.
+
+->      Bottom-up design approach Four pillars of OOP design: Abstraction: Used in OOP to simplify the user experience by hiding internal details 	Encapsulation: Functions by bundling related attributes and methods together Inheritance: The concept that classes and objects can take on 	elements of other classes and objects that are already in existence by inheriting their properties Polymorphism: Concept of using one 	chain for a variety of applications.
+
+
+
+POP:-
+
+->      Functions as foundational elements The foundational elements of POP are functions. Functions are the product of the broken-down segments 	within program-oriented programming. The benefits of functions are that they can change the form of any piece of data at any time and 	place.
+
+->      Use of global data Within POP, functions typically share global data. This can be useful when multiple functions need to access the same 	data. Because POP utilises the function of global data, data is free to move throughout the program from function to function.
+
+->      Top-down design approach POP follows a particular procedure or order via a structured flowchart where the program completes tasks in top-	down sequential order.

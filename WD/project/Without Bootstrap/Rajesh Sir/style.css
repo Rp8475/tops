@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Mobile default */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* tablet 600 - 768 */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/* Desktop 768> */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* Header Start */
+.header {
+  background-color: yellow;
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+}
+/* Header End */
+/* NAVBAR Start */
+@media screen and (max-width: 756px) {
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 20px;
+  /* float: left; */
+}
+.navbar a {
+  color: white;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  float: left;
+  display: block;
+  padding: 20px;
+  font-size: 25px;
+  text-decoration: none;
+}
+/* NAVBAR End */
+
+/* Banner Start */
+.banner {
+  border: 1px solid black;
+  background: url(banner1.jpg);
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+.banner h1 {
+  font-size: 35px;
+}
+/* Banner End */
+
+/* Main Section Start */
+.left {
+  background-color: black;
+  color: orange;
+  text-align: center;
+}
+.center {
+  background-color: orange;
+  padding: 10px;
+}
+.center p {
+  font-size: 20px;
+}
+.center .img {
+  width: 100%;
+}
+.right {
+  background-color: black;
+  color: orange;
+  text-align: center;
+}
+@media screen and (max-width: 756px) {
+  .right {
+    display: none;
+  }
+}
+/* Main Section End */
+
+/* Footer Start */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* Footer End */

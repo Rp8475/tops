@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTTP Methods Demo - GET, POST, PUT, DELETE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>HTTP Methods API Client</h1>
+    <p class="subtitle">Complete CRUD operations with JSONPlaceholder using Fetch API</p>
+
+    <section class="method-controls">
+      <div class="method-group">
+        <h3>GET Methods</h3>
+        <button id="getPostsBtn" class="method-btn get">GET Posts</button>
+        <button id="getUsersBtn" class="method-btn get">GET Users</button>
+        <button id="getSinglePostBtn" class="method-btn get">GET Post #1</button>
+      </div>
+
+      <div class="method-group">
+        <h3>POST Method</h3>
+        <div class="post-form">
+          <label class="input-group">
+            <span>Title</span>
+            <input id="postTitleInput" type="text" placeholder="Enter post title" />
+          </label>
+          <label class="input-group">
+            <span>Body</span>
+            <textarea id="postBodyInput" rows="4" placeholder="Enter post body"></textarea>
+          </label>
+          <label class="input-group">
+            <span>User ID</span>
+            <input id="postUserIdInput" type="number" min="1" value="1" />
+          </label>
+          <button id="createPostBtn" class="method-btn post">CREATE Post</button>
+        </div>
+      </div>
+
+      <div class="method-group">
+        <h3>PUT Method</h3>
+        <div class="action-form">
+          <label class="input-group">
+            <span>Post ID</span>
+            <input id="updatePostIdInput" type="number" min="1" value="1" />
+          </label>
+          <label class="input-group">
+            <span>Title</span>
+            <input id="updatePostTitleInput" type="text" placeholder="Enter updated title" />
+          </label>
+          <label class="input-group">
+            <span>Body</span>
+            <textarea id="updatePostBodyInput" rows="4" placeholder="Enter updated body"></textarea>
+          </label>
+          <label class="input-group">
+            <span>User ID</span>
+            <input id="updatePostUserIdInput" type="number" min="1" value="1" />
+          </label>
+          <button id="updatePostBtn" class="method-btn put">UPDATE Post</button>
+        </div>
+      </div>
+
+      <div class="method-group">
+        <h3>DELETE Method</h3>
+        <div class="action-form">
+          <label class="input-group">
+            <span>Post ID</span>
+            <input id="deletePostIdInput" type="number" min="1" value="1" />
+          </label>
+          <button id="deletePostBtn" class="method-btn delete">DELETE Post</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="response" class="response">
+      <p class="hint">Click any button above to test the corresponding HTTP method with the JSONPlaceholder API.</p>
+    </section>
+
+    <section id="consoleOutput" class="console-output">
+      <h3>API Call Logs</h3>
+      <div id="consoleLogs" class="console-logs">
+        <p class="console-hint">HTTP method calls and responses will be logged here...</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

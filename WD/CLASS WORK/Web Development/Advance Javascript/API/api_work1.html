@@ -1,0 +1,19 @@
+<table id="table" border="1"></table>
+
+<script>
+  fetch(`https://fakestoreapi.com/products`)
+    .then((res) => res.json())
+    .then((obj) => fetchdata(obj));
+
+  function fetchdata(myobj) {
+    var div = document.getElementById("table");
+    for (data of myobj) {
+      var html = `<tr>
+						<td>${data.id}</td>
+						<td>${data.title}</td>
+						<td>${data.price}</td>
+					 </tr>`;
+      div.insertAdjacentHTML("beforeend", html);
+    }
+  }
+</script>

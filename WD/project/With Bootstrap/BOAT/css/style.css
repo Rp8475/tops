@@ -1,0 +1,81 @@
+/* Header 1 Start */
+.header1 {
+  background-color: rgba(0, 0, 0, 0.086);
+  color: black;
+  /* border: 1px solid black; */
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+/* Header 1 End */
+
+/* Navbar Start */
+.boat {
+  background-color: transparent;
+}
+.boat_logo {
+  width: 60%;
+}
+
+/* Navbar End */
+
+/* Services Start */
+.services img {
+  width: 40%;
+}
+.card:hover {
+  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.344); */
+  transition: all 0.3s ease-in-out;
+}
+.card1 {
+  overflow: hidden;
+}
+.card1:hover img {
+  transform: scale(1.4, 1.4);
+  transition: all 0.4s ease-in-out;
+}
+/* Services End */
+
+/* Big Deals Start */
+.accordion ul li a {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.551);
+}
+.accordion a:active {
+  border: 1px solid black;
+}
+.accordion a:hover {
+  /* border-radius: 50%; */
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  text-decoration: none;
+}
+
+/* Big Deals End */
+
+.card video {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.card {
+  position: absolute;
+}
+.img {
+  position: relative;
+  bottom: 50px;
+}
+.blog button {
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.blog button:hover {
+  color: white;
+  letter-spacing: 2px;
+  background-color: black;
+  /* box-shadow: 10px 010px 50px bl; */
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "1_MAX_NO_FROM_ARRAY.C": "cpp",
+    "2_CLACULATOR_USING_SWITCHCASE.C": "cpp",
+    "3_REVERSE_STRING_USING_RECURSION.C": "cpp",
+    "4_FACTORIAL_USING_RECURSION.C": "cpp",
+    "5_ASC_DESC_USING_ARRAY.C": "cpp",
+    "6_CALCULATOR_USING_2D_ARRAY.C": "cpp",
+    "7_FIND_LENGTH_OF_STRING.C": "cpp",
+    "8_REVERSE_&_CHECK_PALINDROME.C": "cpp",
+    "8(A)_DISPLAY_INFORMATION.C": "cpp",
+    "8(B)_DETAILS_OF_5_EMPLOYEE.C": "cpp",
+    "11_REVERSE_NUMBER.C": "cpp",
+    "10_PALINDROME_USING_FORLOOP_FUNCTION.C": "cpp",
+    "12_ACCEPT_NAME_&_STORE_IN_ARRAY.C": "cpp",
+    "13_EVEN_ODD_USING_FOR_LOOP.C": "cpp",
+    "14_2D_MATRIX.C": "cpp",
+    "15_ASCENDING_ORDER.C": "cpp",
+    "16_SUM_OF_ARRAY.C": "cpp"
+  }
+}

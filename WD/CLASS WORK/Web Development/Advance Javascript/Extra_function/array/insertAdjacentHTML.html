@@ -1,0 +1,28 @@
+
+<div id="test1" style="background-color:red;border:solid 2px">
+	<h1>Hello 1</h1>
+</div>
+
+<br><br><br><br>
+<script>
+	document.getElementById('test1').innerHTML="<h1>Good Morning</h1>";
+</script>
+<!--
+The insertAdjacentHTML() method inserts HTML code into a specified position.
+
+afterbegin	After the beginning of the element (first child)
+afterend	After the element
+beforebegin	Before the element
+beforeend	Before the end of the element (last child)
+-->
+<div id="test2" style="background-color:red;border:solid 2px">
+	<h1>Hello 2</h1>
+</div>
+
+<script>
+	var element=document.getElementById('test2');
+	var html='<h1>Good Morning</h1>';
+	element.insertAdjacentHTML('beforeend',html);
+</script>
+
+

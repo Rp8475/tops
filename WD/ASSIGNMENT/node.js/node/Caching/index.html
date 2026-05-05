@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caching Demo - JSONPlaceholder Posts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Caching Demo</h1>
+    <p class="subtitle">Fetch posts with intelligent caching to avoid unnecessary network requests</p>
+
+    <section class="controls">
+      <button id="fetchPostsBtn" class="fetch-btn">Fetch Posts</button>
+      <button id="clearCacheBtn" class="clear-btn">Clear Cache</button>
+      <button id="forceRefreshBtn" class="refresh-btn">Force Refresh</button>
+    </section>
+
+    <section id="cacheStatus" class="cache-status">
+      <div class="status-item">
+        <span class="status-label">Cache Status:</span>
+        <span id="cacheState" class="status-value">Not loaded</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Last Updated:</span>
+        <span id="lastUpdated" class="status-value">Never</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Posts Count:</span>
+        <span id="postsCount" class="status-value">0</span>
+      </div>
+    </section>
+
+    <section id="response" class="response">
+      <p class="hint">Click "Fetch Posts" to load posts with caching. The system will check cache first before making network requests.</p>
+    </section>
+
+    <section id="consoleOutput" class="console-output">
+      <h3>Console Output</h3>
+      <div id="consoleLogs" class="console-logs">
+        <p class="console-hint">Cache operations and API calls will be logged here...</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

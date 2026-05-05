@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error Handling Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Fetch Posts with Error Handling</h1>
+    <div class="search-panel">
+      <label for="userIdInput">User ID</label>
+      <input id="userIdInput" type="number" min="1" placeholder="Enter a user ID" />
+      <button id="searchButton">Load Posts</button>
+    </div>
+    <section id="results" class="results">
+      <p class="hint">Enter a user ID and click the button to load posts from JSONPlaceholder.</p>
+    </section>
+  </main>
+
+  <div id="errorPopup" class="popup-overlay hidden" role="alertdialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup">
+      <h2 id="popupTitle">Error</h2>
+      <p id="popupMessage"></p>
+      <button id="closePopup" class="popup-close">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

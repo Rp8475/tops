@@ -1,0 +1,30 @@
+{
+  "files.associations": {
+    "1_PRINT_VALUE.C": "cpp",
+    "2_DISPLAY_VALUES_FROM_USER.C": "cpp",
+    "3_EVEN_ODD_SUM.C": "cpp",
+    "4_TABLES.C": "cpp",
+    "5_FACTORAL.C": "cpp",
+    "6_FIBONACCI_SERIES.C": "cpp",
+    "7_REVERSE_ORDER.C": "cpp",
+    "8_LARGEST_DIGIT_FROM_NUMBER.C": "cpp",
+    "9_SUMMATION.C": "cpp",
+    "10_1ST_&_LAST_DIGIT-SUM.C": "cpp",
+    "11_RUN_TIME.C": "cpp",
+    "12_ARMSTRONG_USING_FOR_&_WHILE.C": "cpp",
+    "13_FACTORIAL_USING_WHILE.C": "cpp",
+    "14_FACTORIAL.C": "cpp",
+    "15_SUM_USING_WHILE.C": "cpp",
+    "16_SUM_NATURAL_NUM_USING_WHILE.C": "cpp",
+    "17_ODD_EVEN_USING_WHILE.C": "cpp",
+    "18_TABLES.C": "cpp",
+    "19_PATTERNS.C": "cpp",
+    "20_PRINT_1_TO_50.C": "cpp",
+    "22_PALINDROME.C": "cpp",
+    "23_REVERSE_NUMBER.C": "cpp",
+    "24_SERIES.C": "cpp",
+    "25_SERIES.C": "cpp",
+    "26_SERIES.C": "cpp",
+    "27_SERIES.C": "cpp"
+  }
+}

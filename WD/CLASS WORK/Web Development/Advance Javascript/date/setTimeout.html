@@ -1,0 +1,36 @@
+
+<!--
+
+setTimeout()
+setInterval()
+-->
+
+
+<h2 id="demo"></h2>
+
+<script>
+setTimeout(myGreeting, 5000);
+
+function myGreeting() 
+{
+  document.getElementById("demo").innerHTML="Happy Birthday!";
+}
+
+</script>
+
+<h2 id="time"></h2>
+
+<script>
+
+function displayHello() 
+{
+  const d = new Date();
+  let watch = d.toLocaleTimeString();
+  document.getElementById("time").innerHTML = watch;
+}
+
+setInterval(displayHello,1000);
+</script>
+
+
+

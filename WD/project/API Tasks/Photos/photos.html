@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+    .col-md-4 {
+      display: flex;
+      /* flex: 1 0 30%; */
+    }
+    .card {
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .card-subtitle {
+      font-size: 18px;
+      color: #6c757d;
+    }
+    .card-text {
+      font-size: 16px;
+    }
+  </style>
+  <body>
+    <div class="row" id="row1"></div>
+  </body>
+  <script>
+    function fetchdata(myobj) {
+      var div = document.getElementById("row1");
+      for (data of myobj) {
+        var html = `<div class="col-md-4">
+        <div class="card" style="width: 18rem">
+          <img src="${data.url}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              ${data.title}
+            </p>
+          </div>
+        </div>
+      </div>`;
+        div.insertAdjacentHTML("beforeend", html);
+      }
+    }
+
+    fetch(`https://jsonplaceholder.typicode.com/photos`)
+      .then((res) => res.json())
+      .then((obj) => fetchdata(obj));
+  </script>
+</html>

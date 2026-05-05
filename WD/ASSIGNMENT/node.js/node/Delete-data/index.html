@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Post - DELETE Request</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Delete Post (DELETE Request)</h1>
+    <p class="subtitle">Remove a post from JSONPlaceholder API</p>
+
+    <section id="postsListContainer" class="posts-list-container">
+      <h2>Available Posts</h2>
+      <div id="postsList" class="posts-list">
+        <p class="loading-hint">Loading posts...</p>
+      </div>
+    </section>
+
+    <div class="form-divider">OR</div>
+
+    <form id="deleteForm" class="post-form">
+      <label for="postId">Post ID to Delete</label>
+      <input
+        id="postId"
+        name="postId"
+        type="number"
+        placeholder="Enter post ID (1-100)"
+        min="1"
+        max="100"
+        value="1"
+        required
+      />
+
+      <button type="submit">Delete Post</button>
+    </form>
+
+    <section id="response" class="response">
+      <p class="hint">Select a post from the list above or enter a post ID to delete.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

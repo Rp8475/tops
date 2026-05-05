@@ -1,0 +1,71 @@
+
+
+
+<script>
+
+// print
+
+//document.write('hello');   // normal print
+//window.alert('hello');  // pop up
+//console.log('hello');
+
+</script>
+
+
+<!-- Print option -->
+
+<h1 id="test1">Hello HTML</h1>
+
+<script>
+document.getElementById('test1').innerHTML="<h1>Hello Akash</h1>";
+</script>
+
+
+<h1 id="test2">Hello Text</h1>
+
+<script>
+document.getElementById('test2').innerText="<h1>Hello Mahesh</h1>";
+</script>
+
+<input type="text" id="test3" value="Sachin">
+
+<script>
+document.getElementById('test3').value="Dhoni";
+</script>
+
+
+
+<hr>
+
+
+<!-- get option -->
+
+<h1 id="test4">Get HTML</h1>
+<p id="html"></p>
+
+<script>
+var myhtml=document.getElementById('test4').innerHTML;
+document.getElementById('html').innerHTML=myhtml;
+</script>
+
+
+
+<h1 id="test5">Get Text</h1>
+<p id="text"></p>
+
+<script>
+var mytext=document.getElementById('test5').innerText;
+document.getElementById('text').innerText=mytext;
+</script>
+
+
+
+
+<input type="text" id="test6" value="Sachin">
+<input type="text" id="value">
+
+
+<script>
+var myvalue=document.getElementById('test6').value;
+document.getElementById('value').value=myvalue;
+</script>

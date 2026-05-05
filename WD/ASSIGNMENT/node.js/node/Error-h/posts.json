@@ -1,0 +1,20 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Local dummy post one",
+    "body": "This is a local dummy post used when the remote API is unavailable."
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Local dummy post two",
+    "body": "The app can still show sample posts using local JSON data."
+  },
+  {
+    "userId": 2,
+    "id": 3,
+    "title": "Another local post",
+    "body": "This sample data is stored in a JSON file inside Error-h."
+  }
+]

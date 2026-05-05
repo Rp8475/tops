@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Form</title>
+</head>
+<body>
+    <h1 align="center">Admissions Form</h1>
+    <p align="center">Enter your admission information below</p>
+
+    <form>
+        <table cellspacing="3" cellpadding="10" align="center">
+            <!-- Name -->
+            <tr>
+                <td><label for="firstName">Name <span style="color: red;">*</span></label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" id="middleInitial" name="middleInitial" placeholder="Middle Initial">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <!-- Birth Date -->
+            <tr>
+                <td><label for="birthDate">Birth Date <span style="color: red;">*</span></label></td>
+                
+                    </tr>
+                    <tr>
+                        <td>
+                    <select id="month" name="month">
+                        <option value="">Month</option>
+                        <!-- Add months options -->
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="day" name="day">
+                        <option value="">Day</option>
+                        <!-- Add days options -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- Continue for all days -->
+                    </select>
+                    <select id="year" name="year">
+                        <option value="">Year</option>
+                        <!-- Add years options -->
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <!-- Continue for other years -->
+                    </select>
+                </td>
+            </tr>
+            </tr>
+       
+
+            <!-- Gender -->
+            <tr>
+                <td><label for="gender">Gender <span style="color: red;">*</span></label></td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="declineGender" name="gender" value="Decline">
+                    <label for="declineGender">Decline to Answer</label>
+                </td>
+            </tr>
+
+            <!-- Hispanic or Latino -->
+            <tr>
+                <td><label for="hispanic">Are you Hispanic or Latino? <span style="color: red;">*</span></label></td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="radio" id="yesHispanic" name="hispanic" value="Yes">
+                    <label for="yesHispanic">Yes</label><br>
+                    <input type="radio" id="noHispanic" name="hispanic" value="No">
+                    <label for="noHispanic">No</label><br>
+                    <input type="radio" id="declineHispanic" name="hispanic" value="Decline">
+                    <label for="declineHispanic">Decline to Answer</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

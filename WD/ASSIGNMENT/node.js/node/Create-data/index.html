@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>Create New Post</h1>
+    <form id="postForm" class="post-form">
+      <p class="hint">User ID and post ID are generated automatically when you submit.</p>
+
+      <label for="title">Title</label>
+      <input id="title" name="title" type="text" placeholder="Post title" required />
+
+      <label for="body">Body</label>
+      <textarea id="body" name="body" placeholder="Post body" rows="5" required></textarea>
+
+      <button type="submit">Create Post</button>
+    </form>
+
+    <section id="response" class="response">
+      <p class="hint">Submit the form to create a new post via JSONPlaceholder.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

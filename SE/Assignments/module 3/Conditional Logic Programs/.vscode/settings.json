@@ -1,0 +1,33 @@
+{
+  "files.associations": {
+    "2_DISPLAY_VALUE.C": "cpp",
+    "15_ADDMISSION_CRITERIA.C": "cpp",
+    "32_CALCULATE_GROSS_SALLARY.C": "cpp",
+    "36_BILL_WITH_ADDITIONAL_SURCHARGE.C": "cpp",
+    "35_MONTHNUMBER_TO_DAYS.C": "cpp",
+    "30_ELECTRICITY_BILL_WITH_SURCHARGE.C": "cpp",
+    "1_EQUAL_OR_NOT.C": "cpp",
+    "12_MAX_NUMBER_USING_TERNAR_OPERATOR.C": "cpp",
+    "13_MIN_NUMBER_USING_TERNARY_OPERATOR.C": "cpp",
+    "17_CHECK_TRIANGLE.C": "cpp",
+    "1_EQUAL_OR_NOT copy.C": "cpp",
+    "32_CALCULATE_GROSS_SALARY.C": "cpp",
+    "3_LEAP_YEAR.C": "cpp",
+    "4_CALCULATOR.C": "cpp",
+    "5_POSITIVE_NEGATIVE.C": "cpp",
+    "6_VOWEL_OR_NOT.C": "cpp",
+    "8_HEIGHT_CATEGORIZED.C": "cpp",
+    "9_UPPERCASE_LOWERCASE.C": "cpp",
+    "10_POSITIVE_NEGATIVE_ZERO.C": "cpp",
+    "11_ODD_EVEN_USING_TERNARY_OPERATOR.C": "cpp",
+    "14_LARGEST_NUMBER.C": "cpp",
+    "18_PROFIT_LOSS.C": "cpp",
+    "19to29_ELECTRICITY_BILL.C": "cpp",
+    "31_DAYS_OF_MONTH.C": "cpp",
+    "33_WEEK_DAY.C": "cpp",
+    "34_MONTHER_NUMBER_TO_NAME.C": "cpp",
+    "12_MAX_NUM_USING_TERNARY.C": "cpp",
+    "13_MIN_NUM_USING_TERNARY.C": "cpp",
+    "37_WEEK_&_VOWEL_CONSONANT.C": "cpp"
+  }
+}
