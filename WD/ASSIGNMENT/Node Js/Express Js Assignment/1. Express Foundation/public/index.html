@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Nexus | Task 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        :root {
+            --bg: #050505;
+            --accent: #38bdf8;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 4rem 1.5rem;
+        }
+        .container { width: 100%; max-width: 900px; }
+        header { text-align: center; margin-bottom: 4rem; }
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 3.5rem; letter-spacing: -2px; }
+
+        .nexus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 32px;
+            backdrop-filter: blur(20px);
+        }
+        .card h2 { font-size: 1rem; color: var(--accent); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.8rem;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .btn:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+
+        input {
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+            padding: 12px;
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .console {
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            height: 200px;
+            overflow-y: auto;
+            grid-column: span 2;
+        }
+        .log-entry { margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.02); padding-bottom: 4px; }
+        .log-entry .tag { color: var(--accent); margin-right: 8px; }
+
+        @media (max-width: 800px) { .nexus-grid { grid-template-columns: 1fr; } .console { grid-column: span 1; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">EXPRESS_JS // CORE_ROUTING</div>
+            <h1>Express Nexus</h1>
+        </header>
+
+        <div class="nexus-grid">
+            <!-- Parameters and Queries -->
+            <section class="card">
+                <h2><i class="ph-bold ph-magnifying-glass"></i> Extraction Logic</h2>
+                <input type="number" id="paramId" placeholder="Parameter (ID): e.g. 1" value="1">
+                <button class="btn" onclick="testParams()">
+                    <i class="ph-bold ph-fingerprint"></i> TEST_PARAMS (ID)
+                </button>
+                <div style="height: 10px;"></div>
+                <input type="text" id="queryType" placeholder="Query (Type): e.g. Core" value="Core">
+                <button class="btn" onclick="testQuery()">
+                    <i class="ph-bold ph-funnel"></i> TEST_QUERY (Type)
+                </button>
+            </section>
+
+            <!-- State Mutation -->
+            <section class="card">
+                <h2><i class="ph-bold ph-arrows-left-right"></i> State Mutation</h2>
+                <button class="btn" style="background: var(--accent); color: #000; border-color: var(--accent);" onclick="testPost()">
+                    <i class="ph-bold ph-plus"></i> POST_NEW_RESOURCE
+                </button>
+                <div style="height: 10px;"></div>
+                <input type="number" id="deleteId" placeholder="ID to Delete: e.g. 1" value="1">
+                <button class="btn" style="border-color: #ef4444; color: #ef4444;" onclick="testDelete()">
+                    <i class="ph-bold ph-trash"></i> DELETE_RESOURCE
+                </button>
+            </section>
+
+            <!-- Console View -->
+            <div class="console" id="consoleView">
+                <div class="log-entry">// Express Nexus Engine initialized. Awaiting commands...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const consoleView = document.getElementById('consoleView');
+
+        const log = (tag, msg) => {
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.innerHTML = `<span class="tag">[${tag}]</span> ${msg}`;
+            consoleView.prepend(entry);
+        };
+
+        const testParams = async () => {
+            const id = document.getElementById('paramId').value;
+            const res = await fetch(`/api/resource/${id}`);
+            const data = await res.json();
+            log('GET_PARAMS', JSON.stringify(data));
+        };
+
+        const testQuery = async () => {
+            const type = document.getElementById('queryType').value;
+            const res = await fetch(`/api/search?type=${type}`);
+            const data = await res.json();
+            log('GET_QUERY', JSON.stringify(data));
+        };
+
+        const testPost = async () => {
+            const res = await fetch('/api/resource', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ type: "Node_Relay", status: "Active" })
+            });
+            const data = await res.json();
+            log('POST_DATA', JSON.stringify(data));
+        };
+
+        const testDelete = async () => {
+            const id = document.getElementById('deleteId').value;
+            const res = await fetch(`/api/resource/${id}`, { method: 'DELETE' });
+            const data = await res.json();
+            log('DELETE_DATA', JSON.stringify(data));
+        };
+    </script>
+</body>
+</html>

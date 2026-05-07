@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Express Task 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #0c0c0c; --acc: #3b82f6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; height: 100vh; display: flex; justify-content: center; align-items: center; }
+        nav { position: fixed; top: 2rem; display: flex; gap: 2rem; }
+        nav a { color: #555; text-decoration: none; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: var(--acc); }
+        .content { text-align: center; }
+        h1 { font-size: 5rem; letter-spacing: -2px; }
+        p { color: #444; font-size: 0.9rem; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="active">HOME</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
+    </nav>
+    <div class="content">
+        <h1>Home Page</h1>
+        <p>EXPRESS_JS // CORE_ROUTING_MODULE</p>
+    </div>
+</body>
+</html>
