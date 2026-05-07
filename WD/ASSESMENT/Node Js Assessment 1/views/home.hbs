@@ -1,0 +1,33 @@
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to My Blog Platform</h1>
+        <p>Sharing insights, tutorials, and stories from the world of technology and design. Stay updated with our latest professional content.</p>
+    </div>
+</section>
+
+<!-- Latest Posts Section -->
+<section class="container">
+    <h2 class="section-title">Latest Posts</h2>
+    
+    <div class="blog-grid">
+        {{#each latestPosts}}
+        <article class="blog-card">
+            <img src="{{this.image}}" alt="{{this.title}}">
+            <div class="blog-content">
+                <h3>{{this.title}}</h3>
+                <p>{{this.description}}</p>
+                <div class="blog-meta">
+                    <span>By {{this.author}}</span>
+                    <span>{{this.date}}</span>
+                </div>
+                <a href="#" class="btn-read-more">Read More</a>
+            </div>
+        </article>
+        {{/each}}
+    </div>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <a href="/blogs" class="btn-submit">View All Blogs</a>
+    </div>
+</section>

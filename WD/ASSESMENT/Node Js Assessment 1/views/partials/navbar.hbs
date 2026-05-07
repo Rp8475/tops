@@ -1,0 +1,16 @@
+<!-- Navbar Partial -->
+<header>
+    <div class="container navbar">
+        <div class="logo">
+            <a href="/">PROFESSIONAL BLOG</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/" class="{{#if (eq activePath '/')}}active{{/if}}">Home</a></li>
+                <li><a href="/about" class="{{#if (eq activePath '/about')}}active{{/if}}">About</a></li>
+                <li><a href="/blogs" class="{{#if (eq activePath '/blogs')}}active{{/if}}">Blogs</a></li>
+                <li><a href="/contact" class="{{#if (eq activePath '/contact')}}active{{/if}}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,22 @@
+<section class="container" style="padding-top: 50px;">
+    <h2 class="section-title">All Blog Posts</h2>
+    
+    <div class="blog-grid">
+        {{#each blogPosts}}
+        <article class="blog-card">
+            <img src="{{this.image}}" alt="{{this.title}}">
+            <div class="blog-content">
+                <h3>{{this.title}}</h3>
+                <p>{{this.description}}</p>
+                <div class="blog-meta">
+                    <span>By {{this.author}}</span>
+                    <span>{{this.date}}</span>
+                </div>
+                <a href="#" class="btn-read-more">Read More</a>
+            </div>
+        </article>
+        {{else}}
+        <p>No blog posts found.</p>
+        {{/each}}
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!-- Link to our custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Optional: Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar Partial - Reusable across all pages -->
+    {{> navbar}}
+
+    <!-- Main Content Area - This is where specific page content will be injected -->
+    <main>
+        {{{body}}}
+    </main>
+
+    <!-- Footer Partial - Reusable across all pages -->
+    {{> footer}}
+
+</body>
+</html>

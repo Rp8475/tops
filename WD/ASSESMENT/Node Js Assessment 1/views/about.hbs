@@ -1,0 +1,29 @@
+<section class="container about-section">
+    <h2 class="section-title">About Our Platform</h2>
+    
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p>Our platform was founded with a simple goal: to provide high-quality, professional insights into the ever-evolving world of web development and design. We believe in the power of sharing knowledge and building a community of passionate developers.</p>
+    </div>
+
+    <div class="mission-vision">
+        <div class="mv-card">
+            <h3>Our Mission</h3>
+            <p>To empower aspiring developers by providing clear, concise, and professional educational content that helps them master modern web technologies.</p>
+        </div>
+        <div class="mv-card">
+            <h3>Our Vision</h3>
+            <p>To become the leading resource for Node.js and full-stack development tutorials, recognized for our classy design and simple yet powerful explanations.</p>
+        </div>
+    </div>
+
+    <h3 class="section-title">Meet Our Team</h3>
+    <div class="team-grid">
+        {{#each teamMembers}}
+        <div class="team-card">
+            <h4>{{this.name}}</h4>
+            <span>{{this.role}}</span>
+            <p>{{this.bio}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>
